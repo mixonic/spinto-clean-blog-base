@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<header>
+
+<div class="sixteen columns clearfix">
+  <h1 class="remove-bottom spinto-editable" style="margin-top: 40px" id="page_title"><a href="/">{{ site.title }}</a></h1>
+  <br />
+</div>
+
+<hr />
+
+<p>
+  <span style="float:right">
+  <a href="/">
+    Latest post →
+  </a>
+  </span>
+  <span>
+  <a href="/posts.html">
+    ← All posts
+  </a>
+  </span>
+</p>
+
+</header>
+
+<div class="main clearfix">
+  
+  <div class="sixteen columns clearfix post_head">
+
+    <h3>{{ page.title }}</h3>
+    
+    <p><small>Posted {{ page.date | date_to_long_string }}. <a href="{{ page.url }}">permalink</a></small></p>
+  </div>
+
+  <div class="sixteen columns clearfix">
+
+    <div class="post">
+      {{ content }}
+    </div>
+
+    <div class="comments">
+      <script>(function(d){ d.write('<div class="fb-comments" data-href="http://'+window.location.host+'{{ page.url }}" data-num-posts="2"></div>'); }(document));</script>
+    </div>
+  
+  </div>
+
+</div>

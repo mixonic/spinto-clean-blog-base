@@ -1,0 +1,50 @@
+---
+title: Posts
+layout: default
+---
+
+<header>
+<div class="sixteen columns clearfix">
+  <h1 class="remove-bottom spinto-editable" style="margin-top: 40px" id="page_title"><a href="/">{{ site.title }}</a></h1>
+  <br />
+</div>
+
+<hr />
+
+<p style="text-align:right;">
+  This is a list of all posts
+  &nbsp; <strong>|</strong> &nbsp;
+  <a href="/">
+    Latest post →
+  </a>
+</p>
+</header>
+
+<div class="main clearfix">
+  
+  <div class="sixteen columns clearfix post_head">
+
+    <h3>All Posts</h3>
+
+  </div>
+
+  <div class="sixteen columns clearfix">
+    
+  <div class="post">
+
+    <ul>
+
+      {% for post in site.posts %}
+      <li>
+      {{ post.date | date_to_long_string }} &mdash;
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+      {% endfor %}
+
+    </ul>
+
+  </div>
+
+  </div>
+
+</div>

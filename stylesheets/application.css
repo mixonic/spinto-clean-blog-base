@@ -1,0 +1,91 @@
+---
+---
+
+{% include stylesheets/base.css %}
+{% include stylesheets/base_addons.css %}
+{% include stylesheets/skeleton.css %}
+{% include stylesheets/layout.css %}
+{% include stylesheets/syntax.css %}
+
+body {
+  background: #EDF3FE;
+  font-family: 'Vollkorn', serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Josefin Slab', sans-serif;
+  font-weight: 600;
+  color: #444;
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+  text-shadow: 0 1px 0 rgba(255,255,255,0.6);
+}
+
+header hr {
+  margin-bottom: 20px;
+}
+
+header h1 a, header h1 a:visited,
+header h2 a, header h2 a:visited,
+header h3 a, header h3 a:visited,
+header h4 a, header h4 a:visited,
+header h5 a, header h5 a:visited {
+  text-decoration: none;
+  color: #444;
+  font-weight: 600;
+}
+
+code {
+  font: 11px/17px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+}
+
+.highlight {
+  background: #f1f1f1;
+  border: 1px solid #e9e9e9;
+  padding: 1px 6px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+.main {
+  background: white;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(20,20,20,0.3);
+  -moz-box-shadow: 1px 1px 2px 1px rgba(20,20,20,0.3);
+  -ms-box-shadow: 1px 1px 2px 1px rgba(20,20,20,0.3);
+  -o-box-shadow: 1px 1px 2px 1px rgba(20,20,20,0.3);
+  box-shadow: 1px 1px 2px 1px rgba(20,20,20,0.3);
+  padding-top: 10px;
+}
+
+.main h1, .main h2, .main h3, .main h3, .main h4, .main h5 {
+  text-shadow: none;
+}
+
+.post h1, .post h2, .post h3, .post h4, .post h5, .post h6 {
+  margin-bottom: 16px;
+}
+
+hr {
+  border-color: #dbe7f4;
+}
+
+.main hr {
+  border-color: #f1f1f1;
+}
+
+.post_head {
+  margin-bottom: 25px;
+  border-bottom: 1px solid #f1f1f1;
+  padding-bottom: 0;
+}
+
+.post_head p {
+  color: #555;
+  margin-bottom: 10px;
+}
+.post_head p a, .post_head p a:visited {
+  color: #555;
+}

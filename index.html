@@ -1,0 +1,47 @@
+---
+title: Home Page
+layout: default
+---
+
+<header>
+<div class="sixteen columns clearfix">
+  <h1 class="remove-bottom spinto-editable" style="margin-top: 40px" id="page_title">{{ site.title }}</h1>
+  <br />
+</div>
+
+<hr />
+
+<p>
+  <a href="/posts.html">
+    ← All posts
+  </a>
+  &nbsp; <strong>|</strong> &nbsp; This is the latest post.
+</p>
+</header>
+
+{% for post in site.posts %}
+
+<div class="main clearfix">
+  
+  <div class="sixteen columns clearfix post_head">
+
+    <h3>{{ post.title }}</h3>
+    
+    <p><small>Posted {{ post.date | date_to_long_string }}. <a href="{{ post.url }}">permalink</a></small></p>
+  </div>
+
+  <div class="sixteen columns clearfix">
+
+    <div class="post">
+      {{ post.content }}
+    </div>
+
+    <div class="comments">
+      <script>(function(d){ d.write('<div class="fb-comments" data-href="http://'+window.location.host+'{{ post.url }}" data-num-posts="2"></div>'); }(document));</script>
+    </div>
+  
+  </div>
+
+</div>
+
+{% endfor %}
